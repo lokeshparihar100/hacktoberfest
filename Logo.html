@@ -3,6 +3,139 @@
     <head>
     <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
         <title>Instagram Logo</title>
+        <style>
+            *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+}
+#tik{
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: radial-gradient(circle at 34% 101%,#F0A400 5%, #FF4A00 20%, #FF0086 51%, #0400E7 91%);
+    border-radius: 20%;
+}
+#out{
+    height: 160px;
+    width: 160px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 13px solid white;
+    border-radius: 20%;
+    z-index: 1;
+}
+#in{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 13px solid #fff;
+    border-radius: 50%;
+    left: 10px;
+}
+#point{
+    position: relative;
+    height: 18px;
+    width: 18px;
+    background: #fff;
+    border-radius: 50%;
+    top:-33%;
+    z-index: 11;
+}
+#tik {
+  position: relative;
+  -webkit-animation-name: anim;
+  -webkit-animation-duration: 2s;
+  animation-name: anim;
+  animation-duration: 2s
+}
+
+@-webkit-keyframes anim {
+  from { bottom:-100px; 
+         opacity:0;
+         transform:rotateY(0deg);
+        } 
+  to { bottom:0px;   
+       opacity:1;
+       transform:rotateY(360deg);
+     }
+}
+
+@keyframes anim { 
+  from{ bottom:-100px;
+        opacity:0;
+        transform:rotateY(0deg);
+      } 
+  to{ bottom:0;
+      opacity:1;
+      transform:rotateY(360deg);
+    }
+}
+#name{
+    color:white;
+    font-size:65px;
+    display:block ;
+    position:absolute  ;
+    top:60px;
+    animation:load 2s ;
+    font-family: 'Peddana', serif;
+    animation:change 5s infinite ;
+}
+@keyframes load { 
+  from{ top:-100px;
+        opacity:0;
+        
+      } 
+  to{ top:60px;
+      opacity:1;
+      
+    }
+}
+@keyframes change{
+   25%{
+    text-shadow:0 0 0 #000;
+    opacity:0.5;
+    color:red;
+  }
+   50%{text-shadow:0px 0px 10px #fff,
+    0px 0px 10px #FF3300,
+    0px 0px 20px #FF3300,
+    0px 0px 50px #FF3300;
+    opacity:.3;
+    color:cyan;
+    }
+    75%{
+      text-shadow:0px 0px 10px #fff,
+    0px 0px 10px #FF3300,
+    0px 0px 20px #FF3300,
+    0px 0px 50px #ff3300;
+    opacity:.5;
+    color:pink;
+    }
+    85%{
+      text-shadow:0 0 0 #000;
+      opacity:0.5;
+      }
+   100%{
+     text-shadow:0px 0px 10px #fff,
+    0px 0px 10px #FF3300,
+    0px 0px 20px #FF3300,
+    0px 0px 50px #FF3300;
+    opacity:1;
+      }
+}
+</style>
     </head>
     <body>
         <div id="tik">
@@ -12,7 +145,7 @@
             </div>
         </div>
         <div id="name">
-            InstagramI
+            Instagram
         </div>
     </body>
 </html>
